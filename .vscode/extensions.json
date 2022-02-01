@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "heybourn.headwind",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "octref.vetur",
+    "stylelint.vscode-stylelint",
+    "christian-kohler.path-intellisense"
+  ]
+}

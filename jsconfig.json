@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es6",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist", "**/node_modules/*"]
+
+  // For Volar Extension
+  // "vueCompilerOptions": {
+  //   "experimentalCompatMode": 2,
+  //   "experimentalTemplateCompilerOptions": {
+  //     "compatConfig": { "MODE": 2 } // optional
+  //   }
+  // }
+}

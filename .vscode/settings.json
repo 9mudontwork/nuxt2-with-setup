@@ -1,0 +1,95 @@
+{
+  // editor
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[yml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.tabSize": 2
+  },
+
+  "[less]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.tabSize": 2
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.tabSize": 2
+  },
+
+  // vetur
+  "vetur.validation.template": false,
+  "vetur.experimental.templateInterpolationService": false,
+  "vetur.completion.tagCasing": "initial",
+
+  // eslint
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+
+  // stylelint
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
+  "stylelint.snippet": ["css", "less", "postcss", "scss", "sass"],
+
+  // headwind
+  "headwind.prependCustomClasses": true,
+  "headwind.runOnSave": false,
+
+  // tailwind
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "vue": "vue"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    // https://github.com/tailwindlabs/tailwindcss-intellisense/issues/129
+    // javascript object
+    [":\\s*?[\"'`]([^\"'`]*).*?,"],
+    [":(?:.|\n)*?[\"'`]([^\"'`]*).*?,"],
+    "%w\\[\\s*([^\\]]*)\\s*\\]",
+    "'([^']*)'"
+    ["/\\*tw\\*/ ([^;]*);", "'([^']*)'"]
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "icon-class",
+    "iconClass",
+    "icon-classes",
+    "iconClasses",
+    "classes"
+  ]
+}
